@@ -2,40 +2,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-
+import data from "../Jsondata/sellerdata.json";
 const Seller = () => {
-  const data = [
-    {
-      id: 1,
-      title: "Review and Preparation of Documents",
-      image: "/Title Search and Encumbrances.svg",
-      step: "01",
-    },
-    {
-      id: 2,
-      title: "Discharge of Mortgage",
-      image: "/Discharge of Mortgage.svg",
-      step: "02",
-    },
-    {
-      id: 3,
-      title: "Property Tax Adjustments",
-      image: "/Property Tax Adjustments.svg",
-      step: "03",
-    },
-    {
-      id: 4,
-      title: "Closing Coordination",
-      image: "/Closing Coordination.svg",
-      step: "04",
-    },
-    {
-      id: 5,
-      title: "Post-Closing Reporting",
-      image: "/Post-Closing Reporting.svg",
-      step: "05",
-    },
-  ];
+
 
   return (
     <>

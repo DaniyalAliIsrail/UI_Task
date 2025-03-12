@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "title": "Title Search and Encumbrances",
+      "image": "/Title Search and Encumbrances.svg",
+      "step": "01"
+    },
+    {
+      "id": 2,
+      "title": "Document Preparation",
+      "image": "/Document Preparation.svg",
+      "step": "02"
+    },
+    {
+      "id": 3,
+      "title": "Closing Coordination",
+      "image": "/Closing Coordination.svg",
+      "step": "03"
+    },
+    {
+      "id": 4,
+      "title": "Property Tax Adjustments",
+      "image": "/Property Tax Adjustments.svg",
+      "step": "04"
+    },
+    {
+      "id": 5,
+      "title": "Post-Closing Reporting",
+      "image": "/Post-Closing Reporting.svg",
+      "step": "05"
+    }
+  ]
+  

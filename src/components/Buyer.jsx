@@ -1,43 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
+import data from "../Jsondata/buyerdata.json"; 
 
 const Buyer = () => {
-  const data = [
-    {
-      id: 1,
-      title: "Title Search and Encumbrances",
-      image: "/Title Search and Encumbrances.svg",
-      step: "01",
-    },
-    {
-      id: 2,
-      title: "Document Preparation",
-      image: "/Document Preparation.svg",
-      step: "02",
-    },
-    {
-      id: 3,
-      title: "Closing Coordination",
-      image: "/Closing Coordination.svg",
-      step: "03",
-    },
-    {
-      id: 4,
-      title: "Property Tax Adjustments",
-      image: "/Property Tax Adjustments.svg",
-      step: "04",
-    },
-    {
-      id: 5,
-      title: "Post-Closing Reporting",
-      image: "/Post-Closing Reporting.svg",
-      step: "05",
-    },
-  ];
 
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-center mt-10">
         {data.map((item, index) => (
           <motion.div
             key={item.id}
