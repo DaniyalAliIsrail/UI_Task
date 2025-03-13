@@ -75,7 +75,9 @@ const Home = () => {
         buyers:
       </p>
 
-      {showUI ? <Seller /> : <Buyer />}
+      <div className="flex justify-center items-center ">
+  {showUI ? <Seller /> : <Buyer />}
+</div>
     </div>
   );
 };
