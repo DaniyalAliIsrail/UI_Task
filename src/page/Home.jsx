@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Buyer from "../components/Buyer";
 import Seller from "../components/Seller";
-
+import { motion } from "framer-motion";
 const Home = () => {
   const [showUI, sethshowUI] = useState(false);
   const handleBuyerAndSeller = () => {
@@ -15,16 +15,45 @@ const Home = () => {
             WORKING WITH
           </h6>
           <div>
-            <span className="text-2xl sm:text-4xl md:text-[5.3rem] font-bold">
-              {showUI ? "Sellers" : "Buyers"}
-            </span>
-            <span className="p-1">/</span>
-            <span
-              onClick={handleBuyerAndSeller}
-              className="text-black-500 text-base sm:text-lg md:text-[1.375rem]"
+            <motion.span
+              onClick={!showUI ? undefined : handleBuyerAndSeller}
+              className={`${
+                !showUI
+                  ? "text-2xl sm:text-4xl md:text-[5.3rem]"
+                  : "text-base sm:text-lg md:text-[1.375rem]"
+              } font-bold transition-all duration-300 cursor-pointer`}
+              animate={{
+                rotateY: !showUI ? 0 : 180,
+              }}
+              initial={false}
+              transition={{
+                duration: 0.5,
+                ease: "easeInOut",
+              }}
             >
-              {showUI ? "Buyers" : "Sellers"}
-            </span>
+              Buyers
+            </motion.span>
+
+            <span className="p-1">/</span>
+
+            <motion.span
+              onClick={showUI ? undefined : handleBuyerAndSeller}
+              className={`${
+                showUI
+                  ? "text-2xl sm:text-4xl md:text-[5.3rem]"
+                  : "text-base sm:text-lg md:text-[1.375rem]"
+              } font-bold transition-all duration-300 cursor-pointer`}
+              animate={{
+                rotateY: showUI ? 0 : 180, // Flip effect
+              }}
+              initial={false}
+              transition={{
+                duration: 0.5,
+                ease: "easeInOut",
+              }}
+            >
+              Sellers
+            </motion.span>
           </div>
         </div>
         <div className="mt-4 sm:mt-6 w-full sm:w-auto">
