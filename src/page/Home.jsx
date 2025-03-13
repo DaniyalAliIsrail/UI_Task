@@ -8,7 +8,7 @@ const Home = () => {
     sethshowUI((prev) => !prev);
   };
   return (
-    <div className="max-w-[90%] lg:max-w-[90%] mx-auto p-6">
+    <div className="max-w-[90%] lg:max-w-[95%] mx-auto p-6">
       <div className="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left text-black">
         <div>
           <h6 className="text-sm sm:text-base md:text-[1.123rem] font-semibold uppercase text-black">
@@ -74,10 +74,10 @@ const Home = () => {
         Lawyers, we include the following services for residential property
         buyers:
       </p>
-
+      {/* {showUI ? <Seller /> : <Buyer />} */}
       <div className="flex justify-center items-center ">
-  {showUI ? <Seller /> : <Buyer />}
-</div>
+        {showUI ? <Seller /> : <Buyer />}
+      </div>
     </div>
   );
 };
