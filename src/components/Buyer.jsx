@@ -14,7 +14,7 @@ const Buyer = () => {
             animate={{ rotateY: 0, opacity: 1 }} 
             exit={{ rotateY: -90, opacity: 0 }} 
             transition={{ duration: 0.5, delay: index * 0.1 }} 
-            className="bg-blue-50 p-6 flex flex-col justify-around w-[228px] h-[335px]  rounded-lg"
+            className="bg-blue-50 p-6 flex flex-col justify-around w-[228px] h-[330px]  rounded-lg"
           >
             <div className="flex justify-between items-start mb-8">
               <div className="w-24 h-24 relative">
